@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#d98fae">
+<title>Roteiro • Japaratinga, Maragogi & Milagres</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+ --pink:#d98fae;--pink-dark:#a94f78;--pink-pale:#fff0f5;
+ --blue:#8ecbdc;--blue-dark:#276b82;--blue-pale:#eaf8fc;
+ --sand:#f6e8d1;--cream:#fffaf4;--ink:#29414b;--muted:#687b80;
+ --green:#8aa99a;--line:#eadfe0;--white:#fff;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.58 "Inter","Aptos","Calibri","Segoe UI",sans-serif;letter-spacing:-.012em}
+a{color:var(--blue-dark)} button{font:inherit;cursor:pointer}
+.hero{min-height:380px;padding:64px 22px 48px;background:linear-gradient(120deg,#fff0f5 0%,#eaf8fc 58%,#d7f0f4 100%);display:flex;align-items:center}
+.hero-inner{max-width:1080px;margin:auto;width:100%}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:800;color:var(--pink-dark)}
+h1{font-family:"Inter","Aptos","Calibri","Segoe UI",sans-serif;font-weight:650;letter-spacing:-.055em;font-size:clamp(2.5rem,7vw,5rem);line-height:1.02;max-width:800px;margin:12px 0;color:#254b5a}
+.hero p{max-width:620px;font-size:1.1rem;color:#385b65}
+.pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.pill{background:#ffffffc9;border:1px solid #fff;border-radius:99px;padding:7px 13px;font-size:.86rem}
+nav{position:sticky;top:0;z-index:5;background:#fffF;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;gap:6px;justify-content:center;flex-wrap:wrap;padding:10px}
+nav a{text-decoration:none;padding:8px 13px;border-radius:99px;font-size:.9rem;font-weight:650}
+nav a:hover{background:var(--pink-pale)}
+main{max-width:1080px;margin:0 auto;padding:32px 20px 70px}
+section{margin:0 0 54px;scroll-margin-top:78px}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px}
+h2{font:650 clamp(1.8rem,4vw,2.6rem)/1.12 "Inter","Aptos","Calibri","Segoe UI",sans-serif;letter-spacing:-.045em;margin:0;color:#28566a}
+h3{margin:0 0 6px;font-size:1.15rem;color:#28566a}
+.lead{color:var(--muted);margin:8px 0 0}
+.notice{background:var(--blue-pale);border-left:4px solid var(--blue);padding:14px 16px;border-radius:0 12px 12px 0;margin:18px 0}
+.notice.pink{background:var(--pink-pale);border-color:var(--pink)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.day{background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px #53666a0b}
+.day-top{padding:17px 19px;background:linear-gradient(110deg,var(--pink-pale),var(--blue-pale));display:flex;justify-content:space-between;align-items:center;gap:10px}
+.day-num{font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;color:var(--pink-dark);font-weight:800}
+.day-date{font:600 1.35rem "Inter","Aptos","Calibri","Segoe UI",sans-serif;letter-spacing:-.035em;color:#28566a}
+.tag{font-size:.75rem;padding:5px 9px;background:white;border-radius:99px;color:var(--blue-dark);white-space:nowrap}
+.day-body{padding:18px 19px}
+.day-body ul{padding-left:19px;margin:10px 0}
+.day-body li{margin:5px 0}
+.tide{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.tide span{background:#f3f9fa;border:1px solid #d9edf1;padding:8px 10px;border-radius:10px;font-size:.86rem}
+.tide b{color:var(--blue-dark)}
+.restaurant{font-size:.9rem;color:var(--muted);margin-top:10px}
+.small{font-size:.85rem;color:var(--muted)}
+.table-wrap{overflow-x:auto;background:white;border:1px solid var(--line);border-radius:16px}
+table{width:100%;border-collapse:collapse;min-width:610px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line)}
+th{background:var(--blue-pale);color:var(--blue-dark);font-size:.85rem}
+tr:last-child td{border-bottom:0}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.tip{background:white;border:1px solid var(--line);padding:17px;border-radius:16px}
+.tip .icon{font-size:1.45rem}
+.tip p{margin:5px 0 0;color:var(--muted);font-size:.92rem}
+.checklist{background:white;border:1px solid var(--line);border-radius:16px;padding:18px}
+.checklist label{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid #f2ebeb}
+.checklist label:last-child{border:0}
+input[type=checkbox]{accent-color:var(--pink-dark);width:18px;height:18px}
+.progress{height:8px;background:#f3e8ed;border-radius:20px;overflow:hidden;margin:10px 0}
+.progress div{height:100%;width:0;background:linear-gradient(90deg,var(--pink),var(--blue));transition:width .2s}
+.editbox{background:#fff;border:1px dashed var(--pink);padding:18px;border-radius:16px}
+.editbox input,.editbox textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:9px;margin:5px 0 12px;font:inherit}
+.editbox button,.print{border:0;background:var(--pink-dark);color:white;padding:10px 15px;border-radius:99px}
+footer{text-align:center;padding:30px 18px;background:var(--blue-pale);color:var(--muted);font-size:.85rem}
+@media(max-width:720px){.grid,.cards{grid-template-columns:1fr}.hero{min-height:330px;padding:48px 20px}.section-head{display:block}.section-head .small{display:block;margin-top:8px}}
+@media print{nav,.editbox,.print{display:none!important}body{background:white}.day{break-inside:avoid;box-shadow:none}section{margin-bottom:25px}.hero{min-height:auto;padding:25px}}
+
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.place{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.place img{width:100%;height:175px;object-fit:cover;display:block;cursor:zoom-in}
+.place-body{padding:14px}.place-body p{font-size:.9rem;color:var(--muted);margin:6px 0 10px}
+.actions{display:flex;gap:8px;flex-wrap:wrap}.linkbtn{display:inline-block;text-decoration:none;border:1px solid #d8e9ed;padding:7px 11px;border-radius:99px;font-size:.83rem;font-weight:700;background:var(--blue-pale)}
+.linkbtn.pink{background:var(--pink-pale);border-color:#f1d5e1;color:var(--pink-dark)}
+.restaurants{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.restaurant-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px}
+.restaurant-card p{margin:5px 0;color:var(--muted);font-size:.9rem}.rating{font-size:.85rem;color:#95632c;font-weight:750}
+.weather{display:grid;grid-template-columns:1fr 1fr;gap:14px}.weather-card{padding:17px;background:linear-gradient(135deg,var(--blue-pale),#fff);border:1px solid #d9edf1;border-radius:15px}
+.source-list{font-size:.84rem;color:var(--muted)}.source-list li{margin:6px 0}
+.lightbox{position:fixed;inset:0;background:#132d35e8;display:none;align-items:center;justify-content:center;padding:20px;z-index:20}
+.lightbox.open{display:flex}.lightbox img{max-width:min(95vw,1100px);max-height:85vh;border-radius:12px}.lightbox button{position:absolute;top:18px;right:20px;border:0;background:white;border-radius:50%;width:42px;height:42px;font-size:1.4rem}
+@media(max-width:720px){.gallery,.restaurants,.weather{grid-template-columns:1fr}.place img{height:210px}}
+@media print{.gallery .place img{height:120px}}
+
+.day-guides{display:grid;gap:12px}.day-guide{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 6px 20px #53666a08}.day-guide summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:17px 19px;background:linear-gradient(105deg,#fff5f8,#f0fafc)}.day-guide summary::-webkit-details-marker{display:none}.day-guide summary:after{content:'＋';font-size:1.25rem;color:var(--pink-dark);font-weight:500}.day-guide[open] summary:after{content:'−'}.day-guide summary span{display:grid;gap:3px}.day-guide summary small{font-size:.72rem;letter-spacing:.1em;font-weight:800;color:var(--pink-dark)}.day-guide summary strong{font-size:1.05rem;color:#28566a}.day-guide summary em{font-style:normal;font-size:.82rem;color:var(--muted);text-align:right}.guide-content{padding:18px 20px 20px;border-top:1px solid var(--line)}.guide-columns{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(210px,.8fr);gap:22px}.guide-content ol{padding-left:20px}.guide-content li{padding:3px 0}.guide-content p{font-size:.9rem;color:var(--muted)}.guide-side{background:#f7fbfc;border-radius:13px;padding:14px;display:flex;flex-direction:column;align-items:flex-start;gap:9px}.guide-side h3{margin-bottom:2px}.guide-side .linkbtn{max-width:100%}
+
+
+/* Ajustes de responsividade para celular */
+html{scroll-padding-top:76px;overflow-x:hidden} body{overflow-x:hidden;min-width:0} img{max-width:100%} main{width:100%;min-width:0}
+.grid>*,.cards>*,.gallery>*,.restaurants>*,.weather>*,.day-guides>*{min-width:0}
+.day-top,.section-head{flex-wrap:wrap;align-items:flex-start}.section-head>div{min-width:0;flex:1 1 280px}.day-top .tag{white-space:normal}.linkbtn{white-space:normal;overflow-wrap:anywhere}
+@media(max-width:760px){
+ main{padding:24px 14px 48px} section{margin-bottom:40px;scroll-margin-top:88px}
+ nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding:9px 12px;scrollbar-width:none} nav::-webkit-scrollbar{display:none} nav a{flex:0 0 auto;padding:8px 11px}
+ .hero{min-height:300px;padding:42px 18px}.hero p{font-size:1rem}.pills{gap:7px}.pill{font-size:.79rem;padding:6px 10px}
+ .grid,.cards,.gallery,.restaurants,.weather{grid-template-columns:minmax(0,1fr)}
+ .section-head{display:flex}.section-head .print{width:100%;margin-top:4px}
+ .day-top{padding:15px}.day-date{font-size:1.2rem}.day-body{padding:15px}
+ .tide{gap:7px}.tide span{font-size:.8rem;flex:1 1 125px}
+ .table-wrap{border-radius:12px}.table-wrap table{min-width:590px}
+ .day-guide summary{padding:15px;align-items:flex-start}.day-guide summary em{max-width:42%;font-size:.75rem}
+ .guide-content{padding:15px}.guide-columns{grid-template-columns:minmax(0,1fr);gap:13px}.guide-side{width:100%}
+ .place img{height:clamp(170px,55vw,240px)}.place-body,.restaurant-card,.tip{padding:15px}
+ .actions{align-items:stretch}.actions .linkbtn{flex:1 1 auto;text-align:center}
+ .checklist{padding:14px}.checklist label{align-items:flex-start;line-height:1.4;padding:11px 0}.checklist input[type=checkbox]{flex:0 0 20px;margin-top:2px}
+ .editbox{padding:15px}.editbox button{width:100%} h2{font-size:clamp(1.65rem,8vw,2.25rem)}
+}
+@media(max-width:390px){.hero{padding:36px 15px}h1{font-size:2.45rem}main{padding-left:11px;padding-right:11px}.day-guide summary{gap:8px}.day-guide summary em{max-width:38%}.tide span{flex-basis:100%}}
+
+
+.place .actions{flex-wrap:wrap}
+
+:root{--pink:#d58aa8;--pink-dark:#9f4f72;--pink-pale:#fff1f5;--blue:#8bc7d7;--blue-dark:#28677d;--blue-pale:#edf8fa;--sand:#f4e7d3;--cream:#fffaf5;--ink:#263f49;--muted:#718087;--line:#eadfe0;--green:#789c8b;--gold:#b68c55}
+body{background:linear-gradient(180deg,#fffaf5 0%,#fff 44%,#fffaf5 100%);letter-spacing:-.018em}
+h1,h2,.day-date,.editorial-title{font-family:Georgia,"Times New Roman",serif!important;font-weight:500!important;letter-spacing:-.035em!important}
+.hero{position:relative;min-height:420px;background:linear-gradient(112deg,#fff0f5 0%,#f9f0e8 48%,#e5f5f8 100%);overflow:hidden}
+.hero:after{content:"";position:absolute;width:390px;height:390px;border:1px solid #d58aa855;border-radius:50%;right:-120px;bottom:-210px;box-shadow:0 0 0 25px #ffffff30,0 0 0 55px #ffffff20}
+.hero-inner{position:relative;z-index:1}
+.eyebrow{letter-spacing:.19em}
+nav{box-shadow:0 5px 22px #40545b0a}
+nav a{font-size:.82rem;letter-spacing:.01em}
+.section-kicker{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--pink-dark);font-weight:800}
+.dash{display:grid;grid-template-columns:1.35fr 1fr;gap:16px;margin:8px 0 42px}
+.dash-feature{background:linear-gradient(135deg,#fff0f5,#eaf8fc);border:1px solid #f0dce4;border-radius:22px;padding:24px;position:relative;overflow:hidden}
+.dash-feature:after{content:"";position:absolute;right:-35px;bottom:-75px;width:210px;height:210px;border:1px solid #d58aa855;border-radius:50%;box-shadow:0 0 0 20px #ffffff28,0 0 0 42px #ffffff1c}
+.dash-feature>*{position:relative;z-index:1}
+.dash-feature h2{font-size:2.15rem;margin:7px 0;color:#28566a}
+.dash-flights{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.flight{background:#ffffffc9;border:1px solid #ffffff;border-radius:14px;padding:13px}
+.flight small{display:block;color:var(--pink-dark);font-weight:800;letter-spacing:.1em;font-size:.68rem}
+.flight strong{display:block;font-size:1.45rem;color:#28566a;font-variant-numeric:tabular-nums}
+.flight span{font-size:.78rem;color:var(--muted)}
+.dash-side{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dash-stat{background:#fff;border:1px solid var(--line);border-radius:17px;padding:16px;min-height:110px}
+.dash-stat .num{font:500 1.7rem Georgia,serif;color:#28566a;display:block}
+.dash-stat small{color:var(--muted);font-size:.78rem}
+.quick-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.quick-links a,.pill-action{display:inline-flex;align-items:center;gap:6px;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:99px;padding:8px 12px;font-size:.8rem;font-weight:700;color:var(--blue-dark)}
+.fav-btn{border:1px solid #f0d5e0;background:var(--pink-pale);color:var(--pink-dark);border-radius:99px;padding:7px 11px;font-size:.78rem;font-weight:750}
+.fav-btn.active{background:var(--pink-dark);color:white;border-color:var(--pink-dark)}
+.tide-point:focus{outline:none}.tide-point:focus circle{stroke:#28677d;stroke-width:4}
+.place,.restaurant-card{position:relative}
+.place .actions{margin-top:10px}
+.restaurant-card .fav-btn{margin-top:9px}
+.favorites-panel,.budget-panel,.diary-panel{background:white;border:1px solid var(--line);border-radius:18px;padding:18px}
+.inline-form{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:9px;align-items:end}
+.inline-form label,.diary-panel label{font-size:.78rem;color:var(--muted);font-weight:700}
+.inline-form input,.inline-form select,.diary-panel input,.diary-panel textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;background:#fffafc;color:var(--ink);font:inherit;margin-top:5px}
+.action-btn{border:0;background:var(--pink-dark);color:white;border-radius:99px;padding:10px 15px;font-weight:700}
+.budget-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.budget-total{background:var(--blue-pale);padding:13px;border-radius:12px}
+.budget-total small{display:block;color:var(--muted);font-size:.72rem}
+.budget-total strong{font:500 1.25rem Georgia,serif;color:var(--blue-dark)}
+.data-list{margin-top:14px;display:grid;gap:8px}
+.data-row{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:10px 12px;background:#fffaf7;border:1px solid #f1e8e5;border-radius:11px;font-size:.88rem}
+.data-row button{border:0;background:transparent;color:var(--pink-dark);font-weight:800}
+.tide-chart-wrap{background:white;border:1px solid var(--line);border-radius:18px;padding:16px}
+#tideChart{width:100%;height:auto;display:block;overflow:visible}
+.chart-legend{display:flex;gap:12px;flex-wrap:wrap;font-size:.78rem;color:var(--muted)}
+.chart-legend span:before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--blue);margin-right:6px}
+.chart-legend span:nth-child(2):before{background:var(--pink)}
+.diary-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.diary-panel textarea{min-height:105px;resize:vertical}
+.saved-note{color:var(--green);font-size:.82rem;min-height:1.3em}
+.fav-empty{color:var(--muted);font-size:.9rem}
+@media(max-width:760px){
+ .dash{grid-template-columns:1fr}.dash-side{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .dash-feature{padding:19px}.dash-feature h2{font-size:1.8rem}
+ .inline-form{grid-template-columns:1fr 1fr}.inline-form .action-btn{grid-column:1/-1}
+ .budget-summary{grid-template-columns:1fr 1fr 1fr}.diary-grid{grid-template-columns:1fr}
+ .dash-flights{gap:8px}.flight{padding:10px}.flight strong{font-size:1.25rem}
+}
+@media(max-width:420px){.dash-side{gap:8px}.dash-stat{padding:12px;min-height:100px}.budget-summary{grid-template-columns:1fr}.inline-form{grid-template-columns:1fr}}
+@media print{.fav-btn,.inline-form,.action-btn{display:none!important}}
+
+
+/* DIREÇÃO DE ARTE — rosa tropical + azul oceano */
+:root{
+ --pink:#e58eae;
+ --pink-dark:#b6537d;
+ --pink-pale:#fff0f5;
+ --blue:#69bfd3;
+ --blue-dark:#216b83;
+ --blue-pale:#e7f7fb;
+ --sand:#f4e5d2;
+ --cream:#fff9f5;
+ --ink:#203e4b;
+ --muted:#6c828b;
+ --line:#eadde2;
+ --green:#729c8b;
+ --gold:#bd9460;
+}
+body{
+ background:
+  radial-gradient(ellipse at 4% 10%,rgba(229,142,174,.11),transparent 27rem),
+  radial-gradient(ellipse at 95% 28%,rgba(105,191,211,.12),transparent 30rem),
+  #fffaf7;
+ color:var(--ink);
+}
+.hero{
+ min-height:470px;
+ background:
+  radial-gradient(ellipse at 85% 18%,rgba(255,255,255,.78) 0 7%,transparent 7.5%),
+  radial-gradient(ellipse at 88% 22%,rgba(255,255,255,.45) 0 15%,transparent 15.5%),
+  linear-gradient(118deg,#f8c9d9 0%,#fce9ed 34%,#d9f1f5 72%,#91d0df 100%);
+}
+.hero:before{
+ content:"";position:absolute;left:-7%;bottom:-130px;width:115%;height:210px;
+ background:rgba(255,255,255,.27);border-radius:50% 50% 0 0/35% 35% 0 0;
+ transform:rotate(-3deg);
+}
+.hero:after{
+ content:"";position:absolute;right:-95px;top:35px;width:340px;height:340px;
+ border:1px solid rgba(255,255,255,.8);border-radius:50%;
+ box-shadow:0 0 0 22px rgba(255,255,255,.14),0 0 0 48px rgba(255,255,255,.11),0 0 0 78px rgba(255,255,255,.08);
+}
+.hero-inner{max-width:1120px}
+.hero h1{color:#244f63;text-shadow:0 1px 0 rgba(255,255,255,.55)}
+.hero .eyebrow{color:#a74770}
+.hero p{color:#355f70}
+.pill{background:rgba(255,255,255,.76);border:1px solid rgba(255,255,255,.95);color:#365f70;box-shadow:0 4px 14px rgba(60,105,120,.06)}
+nav{background:rgba(255,250,249,.92);border-bottom:1px solid #eedde4}
+nav a{color:#3d6979}
+nav a:hover,nav a:focus{background:linear-gradient(100deg,#ffe5ef,#e1f5f9);color:#a64d74}
+h1,h2,.day-date,.editorial-title{color:#28576b}
+h2{position:relative;padding-bottom:11px}
+h2:after{content:"";display:block;width:54px;height:3px;border-radius:3px;margin-top:10px;background:linear-gradient(90deg,var(--pink),var(--blue))}
+.eyebrow,.section-kicker{color:var(--pink-dark)}
+.day,.tip,.restaurant-card,.place,.favorites-panel,.budget-panel,.diary-panel,.checklist,.tide-chart-wrap{
+ border-color:#eddee4;
+ box-shadow:0 12px 30px rgba(69,100,113,.055);
+}
+.day{border-radius:20px}
+.day-top{background:linear-gradient(110deg,#ffe8f0 0%,#f9eef2 42%,#e5f6f9 100%);border-bottom:1px solid #f1e1e7}
+.day-num{color:#ad5279}
+.day-date{color:#28576b}
+.tag{background:#fff;border:1px solid #d9edf1;color:#286d83}
+.notice{background:linear-gradient(105deg,#e9f8fb,#f6fbfc);border-left-color:var(--blue);color:#355d6b}
+.notice.pink{background:linear-gradient(105deg,#fff0f5,#fff8fa);border-left-color:var(--pink)}
+button,.action-btn,.print{background:linear-gradient(110deg,#c35d87,#d77d9e);color:#fff;border:0;box-shadow:0 5px 14px rgba(182,83,125,.16)}
+button:hover,.action-btn:hover,.print:hover{filter:brightness(1.04);transform:translateY(-1px)}
+.fav-btn{background:#fff0f5;color:#ad5279;border:1px solid #f1cada;box-shadow:none}
+.fav-btn.active{background:#b6537d;color:white}
+.quick-links a,.pill-action{background:rgba(255,255,255,.9);border-color:#d9edf1;color:#286d83}
+.dash-feature{
+ background:linear-gradient(135deg,#f8d2df 0%,#fff0f4 36%,#e7f7fa 75%,#c6eaf1 100%);
+ border:1px solid #efd5df;
+ box-shadow:0 14px 35px rgba(78,119,133,.09);
+}
+.dash-feature h2{color:#28576b}
+.dash-feature h2:after{background:linear-gradient(90deg,#c35d87,#69bfd3)}
+.dash-stat{background:rgba(255,255,255,.86);border-color:#e8e5e5;box-shadow:0 8px 22px rgba(70,105,117,.045)}
+.dash-stat .num{color:#286d83}
+.flight{background:rgba(255,255,255,.78);border-color:white}
+.flight small{color:#b6537d}
+.flight strong{color:#28576b}
+.tide span,.tide-chart-wrap{background:#f0fafc;border-color:#d8edf2}
+th{background:linear-gradient(90deg,#e7f7fb,#fdf0f5);color:#286d83}
+.tide-chart-wrap{background:linear-gradient(145deg,#fff,#f0fafc)}
+.budget-total{background:linear-gradient(135deg,#e8f7fa,#f7fbfc)}
+.data-row{background:linear-gradient(100deg,#fff9fb,#f5fbfc);border-color:#edf0ef}
+.editbox{border-color:#e5a4bd;background:linear-gradient(135deg,#fff7fa,#f7fcfd)}
+input:focus,textarea:focus,select:focus{outline:2px solid rgba(105,191,211,.38);border-color:#69bfd3}
+footer{background:linear-gradient(100deg,#fff0f5,#e7f7fb);color:#52727e}
+@media(max-width:760px){
+ .hero{min-height:400px}
+ .hero:after{width:210px;height:210px;right:-100px;top:25px}
+ .dash-feature{background:linear-gradient(145deg,#f8d2df,#fff0f4 48%,#dff4f8)}
+}
+
+
+/* Dashboard — cartões editoriais com identidade rosa + azul oceano */
+.dash{align-items:stretch;gap:18px}
+.dash-side{
+ display:grid;
+ grid-template-columns:repeat(2,minmax(0,1fr));
+ grid-template-rows:repeat(2,minmax(148px,1fr));
+ gap:13px;
+}
+.dash-stat{
+ position:relative;
+ isolation:isolate;
+ overflow:hidden;
+ display:flex;
+ flex-direction:column;
+ justify-content:flex-end;
+ align-items:flex-start;
+ min-width:0;
+ min-height:148px;
+ padding:18px 18px 17px;
+ border:1px solid rgba(255,255,255,.88);
+ border-radius:22px;
+ background:linear-gradient(145deg,rgba(255,255,255,.97),rgba(255,245,248,.92));
+ box-shadow:0 10px 26px rgba(57,91,105,.065),inset 0 1px 0 #fff;
+ transition:transform .22s ease,box-shadow .22s ease;
+}
+.dash-stat:before{
+ content:"";
+ position:absolute;
+ z-index:-1;
+ width:128px;height:128px;
+ border-radius:50%;
+ right:-42px;top:-54px;
+ background:rgba(229,142,174,.15);
+}
+.dash-stat:after{
+ content:"";
+ position:absolute;
+ z-index:-1;
+ width:88px;height:88px;
+ border:1px solid rgba(255,255,255,.8);
+ border-radius:50%;
+ right:-18px;top:-20px;
+}
+.dash-stat:hover{
+ transform:translateY(-3px);
+ box-shadow:0 15px 30px rgba(57,91,105,.10);
+}
+.dash-stat .stat-icon{
+ position:absolute;
+ top:15px;left:17px;
+ display:grid;place-items:center;
+ width:31px;height:31px;
+ border-radius:50%;
+ background:rgba(255,255,255,.78);
+ border:1px solid rgba(255,255,255,.95);
+ color:#b6537d;
+ font-size:1.2rem;
+ line-height:1;
+}
+.dash-stat .stat-label{
+ position:absolute;
+ top:21px;left:57px;right:10px;
+ color:#8b7881;
+ text-transform:uppercase;
+ letter-spacing:.105em;
+ font-size:.62rem;
+ line-height:1.25;
+ font-weight:800;
+}
+.dash-stat .num{
+ display:block;
+ width:100%;
+ margin-top:34px;
+ color:#28576b;
+ font-family:Georgia,"Times New Roman",serif;
+ font-size:clamp(1.45rem,2.2vw,2.05rem);
+ font-weight:500;
+ line-height:1.08;
+ letter-spacing:-.045em;
+ overflow-wrap:anywhere;
+}
+.dash-stat small{
+ display:block;
+ margin-top:7px;
+ color:#71838a;
+ font-size:.79rem;
+ line-height:1.3;
+}
+.dash-stat.stat-days{
+ background:linear-gradient(145deg,#fff8fa 0%,#fce4ed 100%);
+ border-color:#f4dce5;
+}
+.dash-stat.stat-days:before{background:rgba(220,119,157,.18)}
+.dash-stat.stat-base{
+ background:linear-gradient(145deg,#f7fcfd 0%,#dff3f7 100%);
+ border-color:#d7edf2;
+}
+.dash-stat.stat-base:before{background:rgba(83,174,197,.18)}
+.dash-stat.stat-base .stat-icon{color:#286d83}
+.dash-stat.stat-base .stat-label{color:#5e8290}
+.dash-stat.stat-beaches{
+ background:linear-gradient(145deg,#fff9fb 0%,#f9edf2 100%);
+ border-color:#f0e0e7;
+}
+.dash-stat.stat-beaches:before{background:rgba(229,142,174,.15)}
+.dash-stat.stat-car{
+ background:linear-gradient(145deg,#f5fbfc 0%,#e5f5f8 100%);
+ border-color:#dceef1;
+}
+.dash-stat.stat-car:before{background:rgba(105,191,211,.17)}
+.dash-stat.stat-car .stat-icon{color:#286d83}
+.dash-stat.stat-car .stat-label{color:#5e8290}
+@media(max-width:760px){
+ .dash-side{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(132px,auto));gap:10px}
+ .dash-stat{min-height:132px;padding:15px;border-radius:18px}
+ .dash-stat .stat-icon{top:12px;left:13px;width:28px;height:28px}
+ .dash-stat .stat-label{top:18px;left:49px;font-size:.57rem;letter-spacing:.075em}
+ .dash-stat .num{font-size:clamp(1.3rem,5vw,1.8rem);margin-top:31px}
+ .dash-stat small{font-size:.72rem}
+}
+@media(max-width:380px){#roteiro .day-date{font-size:1.28rem}#roteiro .day-theme{font-size:.74rem}
+ .dash-side{gap:8px}
+ .dash-stat{padding:12px;min-height:126px}
+ .dash-stat .stat-label{font-size:.52rem;left:45px}
+ .dash-stat .num{font-size:1.28rem}
+}
+
+
+/* Roteiro — cartões com personalidade editorial tropical */
+#roteiro .grid{gap:18px}
+#roteiro .day{
+ position:relative;
+ isolation:isolate;
+ border:1px solid #eedde5;
+ border-radius:22px;
+ overflow:hidden;
+ background:#fff;
+ box-shadow:0 12px 28px rgba(63,96,108,.065);
+ transition:transform .22s ease,box-shadow .22s ease;
+}
+#roteiro .day:hover{transform:translateY(-3px);box-shadow:0 17px 34px rgba(63,96,108,.11)}
+#roteiro .day:before{
+ content:"";position:absolute;z-index:-1;right:-36px;top:78px;width:130px;height:130px;
+ border:1px solid rgba(105,191,211,.18);border-radius:50%;
+ box-shadow:0 0 0 15px rgba(105,191,211,.055),0 0 0 31px rgba(229,142,174,.045);
+}
+#roteiro .day-top{
+ position:relative;
+ padding:19px 20px 17px;
+ align-items:flex-start;
+ background:linear-gradient(112deg,#ffeaf1 0%,#fff4f6 48%,#e9f8fb 100%);
+ border-bottom:1px solid #f1e2e8;
+}
+#roteiro .day:nth-child(2n) .day-top{background:linear-gradient(112deg,#e6f6f9 0%,#f2fafb 50%,#fff0f5 100%)}
+#roteiro .day-num{
+ display:inline-flex;align-items:center;gap:7px;
+ color:#a64d75;font-size:.67rem;font-weight:850;letter-spacing:.14em;
+ text-transform:uppercase;margin-bottom:7px;
+}
+#roteiro .day-num:before{content:"";width:18px;height:2px;border-radius:2px;background:linear-gradient(90deg,#d77d9e,#69bfd3)}
+#roteiro .day-date{
+ font-size:1.48rem;line-height:1.12;color:#28576b;
+ max-width:420px;
+}
+#roteiro .day-top .tag{
+ margin-top:4px;padding:7px 11px;
+ border:1px solid rgba(255,255,255,.95);
+ background:rgba(255,255,255,.76);
+ color:#286d83;font-size:.7rem;font-weight:750;
+ box-shadow:0 3px 10px rgba(69,110,124,.06);
+}
+#roteiro .day-body{padding:19px 20px 21px}
+#roteiro .day-body h3{font:500 1.12rem Georgia,serif;color:#a64d75;margin-bottom:10px}
+#roteiro .day-body ul{list-style:none;padding:0;margin:0 0 15px;display:grid;gap:8px}
+#roteiro .day-body li{
+ position:relative;padding-left:19px;margin:0;
+ color:#526b75;font-size:.91rem;line-height:1.48;
+}
+#roteiro .day-body li:before{
+ content:"";position:absolute;left:1px;top:.58em;width:7px;height:7px;
+ border-radius:50%;background:#e58eae;box-shadow:0 0 0 3px #fff0f5;
+}
+#roteiro .day:nth-child(2n) .day-body li:before{background:#69bfd3;box-shadow:0 0 0 3px #e7f7fb}
+#roteiro .tide{gap:7px;margin-top:16px}
+#roteiro .tide span{
+ border:1px solid #dceef2;background:linear-gradient(110deg,#eef9fb,#f8fcfc);
+ border-radius:11px;padding:8px 10px;color:#4c7582;font-size:.78rem;
+}
+#roteiro .tide span b{color:#286d83}
+#roteiro .restaurant{
+ border-top:1px solid #f1e7e9;padding-top:12px;margin-top:13px;
+ color:#7b6872;font-size:.83rem;line-height:1.45;
+}
+#meu-dia .day-guides{gap:14px}
+#meu-dia .day-guide{
+ position:relative;
+ border:1px solid #ecdde4;border-radius:19px;
+ background:linear-gradient(135deg,#fff 0%,#fffafb 100%);
+ box-shadow:0 8px 23px rgba(63,96,108,.055);
+ overflow:hidden;
+ transition:box-shadow .2s ease,border-color .2s ease;
+}
+#meu-dia .day-guide:nth-child(2n){
+ background:linear-gradient(135deg,#fff 0%,#f5fbfc 100%);
+ border-color:#dcecf0;
+}
+#meu-dia .day-guide[open]{
+ border-color:#e5b6c8;
+ box-shadow:0 13px 30px rgba(91,115,124,.09);
+}
+#meu-dia .day-guide summary{
+ position:relative;
+ min-height:94px;
+ padding:19px 22px;
+ display:grid;
+ grid-template-columns:minmax(0,1fr) minmax(170px,26%) 20px;
+ align-items:center;
+ gap:16px;
+ list-style:none;
+ cursor:pointer;
+ background:linear-gradient(100deg,rgba(255,237,243,.8),rgba(232,247,250,.78));
+}
+#meu-dia .day-guide:nth-child(2n) summary{
+ background:linear-gradient(100deg,rgba(230,247,250,.85),rgba(255,241,246,.78));
+}
+#meu-dia .day-guide summary::-webkit-details-marker{display:none}
+#meu-dia .day-guide summary:before{
+ content:"";position:absolute;left:0;top:0;bottom:0;width:4px;
+ background:linear-gradient(180deg,#df8eac,#75c5d6);
+}
+#meu-dia .day-guide summary span{grid-column:1;min-width:0}
+#meu-dia .day-guide summary small{
+ display:block;color:#ae5a7e;font-size:.66rem;font-weight:850;
+ letter-spacing:.15em;margin-bottom:7px;
+}
+#meu-dia .day-guide summary strong{
+ display:block;color:#28576b;font:500 1.35rem/1.16 Georgia,"Times New Roman",serif;
+ letter-spacing:-.02em;overflow-wrap:anywhere;
+}
+#meu-dia .day-guide summary em{
+ grid-column:2;justify-self:stretch;width:100%;max-width:none;
+ padding:8px 11px;border-radius:99px;text-align:center;
+ color:#397286;background:rgba(255,255,255,.75);
+ border:1px solid rgba(255,255,255,.95);
+ font-size:.76rem;font-style:normal;font-weight:700;line-height:1.3;
+}
+#meu-dia .day-guide summary:after{
+ content:"＋";grid-column:3;justify-self:end;
+ display:grid;place-items:center;width:27px;height:27px;
+ border-radius:50%;background:#fff;color:#b6537d;font-size:1rem;
+ box-shadow:0 2px 8px rgba(65,100,112,.08);
+}
+#meu-dia .day-guide[open] summary:after{content:"−";background:#b6537d;color:#fff}
+#meu-dia .guide-content{padding:22px;border-top:1px solid #f0e4e8}
+#meu-dia .guide-columns{gap:20px}
+#meu-dia .guide-columns>div:first-child{
+ padding:18px;border-radius:15px;background:linear-gradient(145deg,#fff7fa,#f7fbfc);
+}
+#meu-dia .guide-columns h3{
+ font:500 1.18rem Georgia,serif;color:#a64d75;margin:0 0 13px;
+}
+#meu-dia .guide-columns ol{counter-reset:trip;list-style:none;padding:0;margin:0;display:grid;gap:11px}
+#meu-dia .guide-columns ol li{
+ counter-increment:trip;position:relative;padding:0 0 0 37px;margin:0;
+ color:#526b75;font-size:.9rem;line-height:1.48;
+}
+#meu-dia .guide-columns ol li:before{
+ content:counter(trip,decimal-leading-zero);
+ position:absolute;left:0;top:-1px;width:27px;height:27px;
+ display:grid;place-items:center;border-radius:50%;
+ background:#f9e1ea;color:#a64d75;font-size:.68rem;font-weight:850;
+}
+#meu-dia .guide-side{
+ padding:17px;border:1px solid #dceef2;border-radius:15px;
+ background:linear-gradient(150deg,#f0fafc,#fff);
+}
+#meu-dia .guide-side h3{color:#286d83}
+#meu-dia .guide-side .linkbtn{
+ display:flex;align-items:center;justify-content:center;
+ width:100%;margin:8px 0 0;border-radius:11px;
+ background:#fff;border:1px solid #dceef2;color:#286d83;
+ text-align:center;text-decoration:none;padding:10px 12px;
+ font-size:.82rem;font-weight:750;
+}
+#meu-dia .guide-side .linkbtn.pink{
+ background:#fff0f5;border-color:#f1d7e1;color:#a64d75;
+}
+#meu-dia .guide-content p{
+ background:linear-gradient(100deg,#eaf8fb,#fff5f8);
+ border-left:3px solid #75c5d6;border-radius:0 10px 10px 0;
+ padding:12px 14px;color:#526b75;font-size:.86rem;line-height:1.5;
+}
+@media(max-width:760px){
+ #roteiro .day-top{padding:16px}
+ #roteiro .day-date{font-size:1.32rem}
+ #roteiro .day-body{padding:16px}
+ #meu-dia .day-guide summary{
+  grid-template-columns:minmax(0,1fr) 28px;
+  grid-template-rows:auto auto;
+  gap:6px 9px;padding:17px 17px 17px 19px;min-height:unset;
+ }
+ #meu-dia .day-guide summary span{grid-column:1;grid-row:1}
+ #meu-dia .day-guide summary em{
+  grid-column:1;grid-row:2;justify-self:start;
+  width:auto;max-width:100%;text-align:left;
+  padding:6px 10px;font-size:.72rem;
+ }
+ #meu-dia .day-guide summary:after{grid-column:2;grid-row:1;align-self:start}
+ #meu-dia .day-guide summary strong{font-size:1.22rem}
+ #meu-dia .guide-content{padding:14px}
+ #meu-dia .guide-columns{grid-template-columns:1fr;gap:12px}
+ #meu-dia .guide-columns>div:first-child,#meu-dia .guide-side{padding:15px}
+}
+
+
+/* Refinamento de leitura: menos aperto, melhor ritmo tipográfico */
+#roteiro .grid{grid-template-columns:1fr;gap:17px;max-width:940px;margin-inline:auto}
+#roteiro .day{border-radius:23px}
+#roteiro .day-top{padding:22px 25px 19px;gap:18px}
+#roteiro .day-date{font-size:1.62rem;line-height:1.12;max-width:unset}
+#roteiro .day-theme{
+ margin-top:6px;color:#8b7881;font-size:.82rem;line-height:1.35;
+ letter-spacing:.015em;font-style:italic;
+}
+#roteiro .day-body{padding:21px 25px 23px}
+#roteiro .day-body h3{font-size:1.22rem;margin-bottom:13px}
+#roteiro .day-body ul{gap:10px;margin-bottom:18px}
+#roteiro .day-body li{font-size:.94rem;line-height:1.58;padding-left:21px}
+#roteiro .tide{margin-top:18px;gap:9px}
+#roteiro .tide span{padding:10px 13px;font-size:.82rem}
+#roteiro .restaurant{margin-top:16px;padding-top:14px;font-size:.88rem;line-height:1.55}
+#meu-dia .day-guide summary{padding:22px 25px;min-height:104px}
+#meu-dia .day-guide summary strong{font-size:1.48rem;line-height:1.2}
+#meu-dia .day-guide summary small{font-size:.69rem;margin-bottom:9px}
+#meu-dia .guide-content{padding:25px}
+#meu-dia .guide-columns>div:first-child{padding:22px}
+#meu-dia .guide-columns ol{gap:14px}
+#meu-dia .guide-columns ol li{font-size:.94rem;line-height:1.58;padding-left:42px}
+#meu-dia .guide-columns ol li:before{width:30px;height:30px}
+#meu-dia .guide-side{padding:20px}
+@media(max-width:760px){
+ #roteiro .grid{gap:13px}
+ #roteiro .day-top{padding:18px 18px 16px}
+ #roteiro .day-date{font-size:1.42rem}
+ #roteiro .day-body{padding:18px}
+ #roteiro .day-body li{font-size:.9rem;line-height:1.53}
+ #roteiro .day-theme{font-size:.78rem}
+ #meu-dia .day-guide summary{padding:18px 18px 18px 20px;min-height:unset}
+ #meu-dia .day-guide summary strong{font-size:1.28rem}
+ #meu-dia .guide-content{padding:15px}
+ #meu-dia .guide-columns>div:first-child,#meu-dia .guide-side{padding:16px}
+}
+
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="hero-inner">
+  <div class="eyebrow">Alagoas • novembro de 2026</div>
+  <h1>Mar azul, dias leves<br>e pé na areia.</h1>
+  <p>Uma semana com base em Japaratinga para descobrir Maragogi, Antunes, Porto de Pedras e a Rota Ecológica dos Milagres — sem correria.</p>
+  <div class="pills"><span class="pill">22–28 nov 2026</span><span class="pill">Hospedagem: Japaratinga</span><span class="pill">Chegada e volta: Recife</span><span class="pill">Carro alugado</span></div>
+ </div>
+</header>
+<nav>
+ <a href="#inicio">Visão geral</a><a href="#roteiro">Roteiro</a><a href="#meu-dia">Meu dia de praia</a><a href="#mares">Marés</a><a href="#praias">Praias</a><a href="#rotas">Mapas e rotas</a><a href="#restaurantes">Restaurantes</a><a href="#favoritos">Favoritos</a><a href="#orcamento">Orçamento</a><a href="#diario">Diário</a><a href="#organizar">Organização</a>
+</nav>
+
+<section id="inicio">
+ <div class="dash">
+  <div class="dash-feature">
+   <div class="section-kicker">Caderno de viagem · Alagoas 2026</div>
+   <h2>Rosa de sol,<br>azul de mar.</h2>
+   <p class="lead">Uma semana entre o rosa do verão e o azul-turquesa do litoral: Japaratinga, Maragogi, Porto de Pedras e a Rota Ecológica dos Milagres.</p>
+   <div class="dash-flights">
+    <div class="flight"><small>IDA · 22 NOV</small><strong>05:15 → 08:00</strong><span>GIG → REC · Azul · direto</span></div>
+    <div class="flight"><small>VOLTA · 28 NOV</small><strong>23:40 → 02:35</strong><span>REC → GIG · chegada 29/11</span></div>
+   </div>
+   <div class="quick-links"><a href="#meu-dia">☀ Meu dia de praia</a><a href="#mares">≈ Tábua de marés</a><a href="#organizar">✓ Checklist</a></div>
+  </div>
+  <div class="dash-side">
+   <div class="dash-stat stat-days">
+    <span class="stat-icon" aria-hidden="true">✳</span>
+    <span class="stat-label">Nossa temporada</span>
+    <span class="num">7 dias</span>
+    <small>22 — 28 novembro</small>
+   </div>
+   <div class="dash-stat stat-base">
+    <span class="stat-icon" aria-hidden="true">⌖</span>
+    <span class="stat-label">Onde vamos ficar</span>
+    <span class="num">Japaratinga</span>
+    <small>Nosso ponto de partida</small>
+   </div>
+   <div class="dash-stat stat-beaches">
+    <span class="stat-icon" aria-hidden="true">〰</span>
+    <span class="stat-label">Pelo litoral</span>
+    <span class="num">6 praias</span>
+    <small>Descobertas no roteiro</small>
+   </div>
+   <div class="dash-stat stat-car">
+    <span class="stat-icon" aria-hidden="true">↗</span>
+    <span class="stat-label">Liberdade para explorar</span>
+    <span class="num">De carro</span>
+    <small>Retirada em Recife</small>
+   </div>
+  </div>
+ </div>
+ <div class="notice pink"><b>Nota de planejamento:</b> os horários de maré ainda são referências preliminares. Vamos validar a tábua oficial e as condições do mar perto da viagem antes de confirmar passeios às piscinas naturais.</div>
+</section>
+
+<main>
+<section id="roteiro">
+ <div class="section-head"><div><div class="eyebrow">A viagem, dia a dia</div><h2>Roteiro enxuto</h2><p class="lead">Uma programação principal por dia, com espaço para aproveitar a praia sem olhar o relógio.</p></div><button class="print" onclick="window.print()">Imprimir roteiro</button></div>
+ <div class="notice pink"><b>Base:</b> Japaratinga. A ideia é manter a mesma pousada e fazer passeios de carro. Voos Azul confirmados: ida GIG 05h15 → REC 08h00 em 22/11; volta REC 23h40 em 28/11 → GIG 02h35 em 29/11. Hospedagem em Japaratinga e carro alugado.</div>
+ <div class="grid">
+  <article class="day"><div class="day-top"><div><div class="day-num">Domingo • 22/11</div><div class="day-date">Chegada + Japaratinga</div><div class="day-theme">O começo em ritmo leve</div></div><span class="tag">Dia leve</span></div><div class="day-body"><h3>Recife → Japaratinga</h3><ul><li>Voo Azul GIG 05h15 → REC 08h00. Retirar o carro no aeroporto e seguir para Japaratinga (trajeto estimado de 2h30–3h, sujeito ao trânsito).</li><li>Depois do check-in, escolher Bitingui ou a praia de Japaratinga.</li><li>Jantar tranquilo perto da hospedagem.</li></ul><div class="tide"><span><b>Baixa-mar</b> 07h54</span><span><b>Altura</b> 0,30 m</span></div><p class="restaurant">Jantar: escolher restaurante em Japaratinga conforme horário de chegada.</p></div></article>
+  <article class="day"><div class="day-top"><div><div class="day-num">Segunda • 23/11</div><div class="day-date">Antunes + Ponta de Mangue</div><div class="day-theme">Um mergulho no azul-turquesa</div></div><span class="tag">Praias favoritas</span></div><div class="day-body"><h3>Dia de mar azul</h3><ul><li>Sair cedo para a Praia de Antunes.</li><li>Aproveitar a manhã e caminhar pela faixa de areia.</li><li>Depois do almoço, seguir para Ponta de Mangue.</li><li>Voltar sem pressa para Japaratinga.</li></ul><div class="tide"><span><b>Baixa-mar</b> 08h37</span><span><b>Altura</b> 0,20 m</span></div><p class="restaurant">Almoço: escolher barraca/restaurante em Antunes ou Ponta de Mangue; confirmar funcionamento e consumação antes.</p></div></article>
+  <article class="day"><div class="day-top"><div><div class="day-num">Terça • 24/11</div><div class="day-date">Galés de Maragogi</div><div class="day-theme">Piscinas naturais em destaque</div></div><span class="tag">Piscinas naturais</span></div><div class="day-body"><h3>Experiência de maré baixa</h3><ul><li>Reservar passeio autorizado às piscinas naturais.</li><li>Confirmar com a operadora o horário de saída ajustado à maré.</li><li>Almoçar em Maragogi e deixar a tarde livre.</li></ul><div class="tide"><span><b>Baixa-mar</b> 09h18</span><span><b>Altura</b> 0,20 m</span></div><p class="restaurant">Almoço: Odoiá ou outro restaurante no centro de Maragogi; verificar reserva e horário.</p></div></article>
+  <article class="day"><div class="day-top"><div><div class="day-num">Quarta • 25/11</div><div class="day-date">Barra Grande + Croas de São Bento</div><div class="day-theme">Jangada, banco de areia e mar azul</div></div><span class="tag">Caminho de Moisés</span></div><div class="day-body"><h3>Um dia entre a praia e as piscinas naturais</h3><ul><li>Consultar a previsão de maré e combinar a saída para as Croas de São Bento com jangadeiros autorizados, em horário compatível com a baixa-mar.</li><li>Depois do passeio, seguir para Barra Grande para almoçar e aproveitar a praia.</li><li>Visitar o Caminho de Moisés somente se a janela de maré e as condições locais forem compatíveis; se não forem, deixar esse trecho para outra ocasião e curtir a praia com calma.</li></ul><div class="tide"><span><b>Baixa-mar</b> 10h03</span><span><b>Altura</b> 0,20 m</span></div><p class="restaurant">Planejamento: as Croas de São Bento são acessadas em passeio embarcado a partir da Praia de São Bento, com saída definida pela maré. Reserve cerca de 2–3 horas e confirme operação, horário e ponto de embarque. Almoço em Barra Grande depois, se a programação permitir.</p></div></article>
+  <article class="day"><div class="day-top"><div><div class="day-num">Quinta • 26/11</div><div class="day-date">Patacho + Milagres</div><div class="day-theme">A beleza da Rota Ecológica</div></div><span class="tag">Rota Ecológica</span></div><div class="day-body"><h3>Porto de Pedras e São Miguel dos Milagres</h3><ul><li>Sair cedo para a Praia do Patacho.</li><li>Escolher uma segunda parada: Praia do Toque ou Porto da Rua.</li><li>Almoçar na região e voltar no fim da tarde.</li></ul><div class="tide"><span><b>Baixa-mar</b> 10h52</span><span><b>Altura</b> 0,20 m</span></div><p class="restaurant">Almoço: No Quintal ou restaurante regional em Porto da Rua; confirmar dias de funcionamento.</p></div></article>
+  <article class="day"><div class="day-top"><div><div class="day-num">Sexta • 27/11</div><div class="day-date">Japaratinga sem pressa</div><div class="day-theme">Um dia para desacelerar</div></div><span class="tag">Descanso</span></div><div class="day-body"><h3>Dia livre perto da pousada</h3><ul><li>Manhã em Bitingui ou Barreiras do Boqueirão.</li><li>Almoço com vista para o mar.</li><li>Tarde livre para piscina, descanso e pôr do sol.</li><li>Jantar em Japaratinga.</li></ul><div class="tide"><span><b>Baixa-mar</b> 11h42</span><span><b>Altura</b> 0,40 m</span></div><p class="restaurant">Restaurantes: escolher entre as opções próximas à pousada, conforme avaliações e funcionamento atualizado.</p></div></article>
+  <article class="day"><div class="day-top"><div><div class="day-num">Sábado • 28/11</div><div class="day-date">Volta para Recife</div><div class="day-theme">Últimos momentos à beira-mar</div></div><span class="tag">Retorno</span></div><div class="day-body"><h3>Japaratinga → aeroporto de Recife</h3><ul><li>Café da manhã e check-out.</li><li>Se houver tempo, praia próxima e almoço cedo.</li><li>Retornar a Recife com folga para trânsito, abastecimento e devolução do carro.</li></ul><div class="tide"><span><b>Baixa-mar</b> 12h39</span><span><b>Altura</b> 0,50 m</span></div><p class="restaurant">Voo às 23h40. Planejar saída de Japaratinga por volta de 16h30–17h, ajustando à previsão de trânsito e à devolução do carro.</p></div></article>
+ </div>
+</section>
+
+<section id="meu-dia">
+ <div class="eyebrow">Guia prático para usar durante a viagem</div><h2>Meu dia de praia</h2>
+ <p class="lead">Abra cada dia para ver a sequência sugerida, a janela de maré, ideias de refeição e atalhos de navegação. Os horários são referências de planejamento, não horários de embarque confirmados.</p>
+ <div class="notice pink"><b>Como usar:</b> escolha o dia e abra os detalhes. Antes de sair, confirme maré, vento, acesso à praia, funcionamento do restaurante e eventuais regras de estacionamento.</div>
+ <div class="day-guides">
+  <details class="day-guide"><summary><span><small>DOMINGO · 22/11</small><strong>Chegada e primeiro banho de mar</strong></span><em>Japaratinga · dia leve</em></summary><div class="guide-content">
+   <div class="guide-columns"><div><h3>Sequência sugerida</h3><ol><li>Retirar o carro no aeroporto do Recife e seguir para Japaratinga.</li><li>Fazer check-in e almoçar sem pressa.</li><li>Se ainda houver luz e disposição, escolher a Praia de Japaratinga ou Bitingui.</li><li>Jantar próximo à pousada.</li></ol><p><b>Maré de referência:</b> baixa-mar às 07h54 · 0,30 m. Como é dia de deslocamento, não vale organizar o dia em função dela.</p></div><div class="guide-side"><h3>Atalhos</h3><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Recife+Airport/Japaratinga+AL/">Rota Recife → Japaratinga ↗</a><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Praia+de+Bitingui+Japaratinga+AL">Praia de Bitingui ↗</a><a class="linkbtn pink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=restaurantes+Japaratinga+AL">Restaurantes próximos ↗</a></div></div>
+  </div></details>
+  <details class="day-guide"><summary><span><small>SEGUNDA · 23/11</small><strong>Antunes + Ponta de Mangue</strong></span><em>Dia de mar azul</em></summary><div class="guide-content"><div class="guide-columns"><div><h3>Sequência sugerida</h3><ol><li>Sair de Japaratinga cedo e chegar a Antunes antes do movimento maior.</li><li>Passar a manhã em Antunes, aproveitando a faixa de areia e o mar.</li><li>Almoçar na região; confirmar consumação mínima, estacionamento e estrutura.</li><li>À tarde, seguir para Ponta de Mangue se as condições do mar estiverem boas.</li><li>Voltar para Japaratinga no fim da tarde.</li></ol><p><b>Maré de referência:</b> baixa-mar às 08h37 · 0,20 m. Procure estar na praia antes da baixa-mar; não é necessário esperar exatamente o horário para começar a aproveitar.</p></div><div class="guide-side"><h3>Atalhos</h3><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Japaratinga+AL/Praia+de+Antunes+Maragogi+AL/">Japaratinga → Antunes ↗</a><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Praia+de+Antunes+Maragogi+AL">Praia de Antunes ↗</a><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Ponta+de+Mangue+Maragogi+AL">Ponta de Mangue ↗</a><a class="linkbtn pink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=restaurantes+Praia+de+Antunes+Maragogi">Onde almoçar ↗</a></div></div></div></details>
+  <details class="day-guide"><summary><span><small>TERÇA · 24/11</small><strong>Galés de Maragogi</strong></span><em>Piscinas naturais</em></summary><div class="guide-content"><div class="guide-columns"><div><h3>Sequência sugerida</h3><ol><li>Reservar com antecedência um passeio autorizado às Galés.</li><li>Confirmar com a operadora o ponto de embarque, a duração e o horário indicado para a maré do dia.</li><li>Levar proteção solar, água e itens necessários; seguir as orientações ambientais.</li><li>Almoçar no centro de Maragogi e deixar a tarde livre.</li></ol><p><b>Maré de referência:</b> baixa-mar às 09h18 · 0,20 m. O horário do passeio deve ser definido pela operadora, não apenas por esta tabela.</p></div><div class="guide-side"><h3>Atalhos</h3><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Gal%C3%A9s+de+Maragogi+embarque">Ponto de embarque / Galés ↗</a><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Odoia+Maragogi">Odoiá Maragogi ↗</a><a class="linkbtn pink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=operadoras+autorizadas+passeio+Gal%C3%A9s+Maragogi">Pesquisar operadoras ↗</a></div></div></div></details>
+  <details class="day-guide"><summary><span><small>QUARTA · 25/11</small><strong>Barra Grande + Croas de São Bento</strong></span><em>Banco de areia</em></summary><div class="guide-content"><div class="guide-columns"><div><h3>Sequência sugerida</h3><ol><li>Começar pelo passeio às Croas de São Bento, com embarque na Praia de São Bento em jangada autorizada e horário combinado com o operador conforme a maré baixa.</li><li>Reservar aproximadamente 2–3 horas para embarque, travessia e permanência nas piscinas naturais; confirmar duração e ponto de encontro na véspera.</li><li>Depois, seguir para Barra Grande para almoçar e aproveitar a praia.</li><li>O Caminho de Moisés fica como opção extra: só incluir se a janela de maré permitir e houver orientação local segura. Se os horários coincidirem, priorizar as Croas e deixar o Caminho de Moisés para outra oportunidade.</li></ol><p><b>Maré de referência:</b> baixa-mar às 10h03 · 0,20 m. As Croas dependem de maré baixa e de condições adequadas de navegação; não tente chegar caminhando. Confirme a saída com operador autorizado e use o equipamento de segurança indicado.</p></div><div class="guide-side"><h3>Atalhos</h3><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Praia+de+S%C3%A3o+Bento+Maragogi+AL">Embarque · São Bento ↗</a><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Japaratinga+AL/Praia+de+Barra+Grande+Maragogi+AL/">Japaratinga → Barra Grande ↗</a><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Caminho+de+Mois%C3%A9s+Maragogi+AL">Caminho de Moisés ↗</a><a class="linkbtn pink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=restaurantes+Barra+Grande+Maragogi+AL">Restaurantes na região ↗</a></div></div></div></details>
+  <details class="day-guide"><summary><span><small>QUINTA · 26/11</small><strong>Patacho + Rota Ecológica</strong></span><em>Porto de Pedras e Milagres</em></summary><div class="guide-content"><div class="guide-columns"><div><h3>Sequência sugerida</h3><ol><li>Sair cedo de Japaratinga e seguir para a Praia do Patacho, em Porto de Pedras.</li><li>Aproveitar a praia e a paisagem; verificar acesso e estacionamento ao chegar.</li><li>Escolher apenas uma segunda parada: Praia do Toque ou Porto da Rua, para não passar o dia no carro.</li><li>Almoçar em São Miguel dos Milagres/Porto da Rua e retornar no fim da tarde.</li></ol><p><b>Maré de referência:</b> baixa-mar às 10h52 · 0,20 m. Para aproveitar a paisagem, considere a janela da manhã até perto do horário previsto, mas valide as condições específicas de cada praia.</p></div><div class="guide-side"><h3>Atalhos</h3><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Japaratinga+AL/Praia+do+Patacho+Porto+de+Pedras+AL/">Japaratinga → Patacho ↗</a><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Praia+do+Patacho+Porto+de+Pedras+AL">Praia do Patacho ↗</a><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Praia+do+Toque+Sao+Miguel+dos+Milagres+AL">Praia do Toque ↗</a><a class="linkbtn pink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Restaurante+No+Quintal+Sao+Miguel+dos+Milagres">No Quintal ↗</a></div></div></div></details>
+  <details class="day-guide"><summary><span><small>SEXTA · 27/11</small><strong>Japaratinga no seu ritmo</strong></span><em>Dia de descanso</em></summary><div class="guide-content"><div class="guide-columns"><div><h3>Sequência sugerida</h3><ol><li>Escolher Bitingui ou Barreiras do Boqueirão para uma manhã tranquila.</li><li>Almoçar perto da praia, depois de conferir preços e estrutura.</li><li>Voltar à pousada para descansar e aproveitar a tarde.</li><li>Fazer um jantar sem pressa em Japaratinga.</li></ol><p><b>Maré de referência:</b> baixa-mar às 11h42 · 0,40 m. Dia pensado para descanso, sem depender de uma maré muito baixa.</p></div><div class="guide-side"><h3>Atalhos</h3><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Praia+de+Bitingui+Japaratinga+AL">Praia de Bitingui ↗</a><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Barreiras+do+Boqueirao+Japaratinga+AL">Barreiras do Boqueirão ↗</a><a class="linkbtn pink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=restaurantes+Japaratinga+AL">Restaurantes em Japaratinga ↗</a></div></div></div></details>
+  <details class="day-guide"><summary><span><small>SÁBADO · 28/11</small><strong>Retorno para Recife</strong></span><em>Voo à noite</em></summary><div class="guide-content"><div class="guide-columns"><div><h3>Sequência sugerida</h3><ol><li>Tomar café, fazer check-out e organizar as malas.</li><li>Se houver uma janela confortável, fazer uma última caminhada ou banho de mar perto da pousada.</li><li>Almoçar cedo e iniciar o retorno a Recife com margem para trânsito, abastecimento e devolução do carro.</li><li>Voo Azul REC 23h40 → GIG 02h35 de 29/11. Saída sugerida de Japaratinga entre 16h30 e 17h, a confirmar conforme trânsito e devolução do carro.</li></ol><p><b>Maré de referência:</b> baixa-mar às 12h39 · 0,50 m. A prioridade do dia é chegar ao aeroporto com tranquilidade.</p></div><div class="guide-side"><h3>Atalhos</h3><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Japaratinga+AL/Recife+Airport/">Japaratinga → Aeroporto do Recife ↗</a><a class="linkbtn pink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Praias+Japaratinga+AL">Praias próximas ↗</a></div></div></div></details>
+ </div>
+</section>
+
+<section id="mares">
+ <div class="eyebrow">Planejamento pelas marés</div><h2>Tábua de marés por dia</h2>
+ <p class="lead">Referência de novembro de 2026 baseada na tábua DHN/Marinha consultada para a estação de Porto de Suape (PE). Como a estação de referência não fica na própria praia, use os horários como orientação e confirme com a operadora local antes de reservar.</p>
+ <div class="notice"><b>Importante:</b> maré baixa não garante água cristalina, segurança ou passeio disponível. Vento, chuva, ondulação, visibilidade, regras ambientais e o ponto de embarque também influenciam. Para piscinas naturais, siga o horário indicado pela operadora autorizada.</div>
+ <div class="table-wrap"><table><thead><tr><th>Data</th><th>Passeio sugerido</th><th>Baixa-mar</th><th>Altura</th><th>Leitura prática</th></tr></thead><tbody>
+ <tr><td>22/11 • dom</td><td>Japaratinga / chegada</td><td>07h54</td><td>0,30 m</td><td>Dia flexível</td></tr>
+ <tr><td>23/11 • seg</td><td>Antunes + Ponta de Mangue</td><td>08h37</td><td>0,20 m</td><td>Boa janela de maré baixa</td></tr>
+ <tr><td>24/11 • ter</td><td>Galés de Maragogi</td><td>09h18</td><td>0,20 m</td><td>Menor altura desta sequência</td></tr>
+ <tr><td>25/11 • qua</td><td>Barra Grande / Caminho de Moisés</td><td>10h03</td><td>0,20 m</td><td>Boa janela, confirmar acesso</td></tr>
+ <tr><td>26/11 • qui</td><td>Patacho + Milagres</td><td>10h52</td><td>0,20 m</td><td>Maré baixa no fim da manhã</td></tr>
+ <tr><td>27/11 • sex</td><td>Japaratinga / descanso</td><td>11h42</td><td>0,40 m</td><td>Menos favorável para piscinas</td></tr>
+ <tr><td>28/11 • sáb</td><td>Retorno / praia próxima</td><td>12h39</td><td>0,50 m</td><td>Priorizar logística do voo</td></tr>
+ </tbody></table></div>
+
+ <div class="tide-chart-wrap" style="margin-top:16px">
+  <h3>Gráfico interativo das baixas-mares</h3>
+  <p class="small">Toque ou clique nos pontos para consultar os valores de referência apresentados na tabela. Não é uma curva contínua da maré.</p>
+  <svg id="tideChart" viewBox="0 0 720 250" role="group" aria-label="Gráfico interativo de alturas preliminares de baixa-mar por dia"></svg>
+  <p id="tidePointInfo" class="small" aria-live="polite">Selecione um ponto para ver o dia e a altura de referência.</p>
+ </div>
+
+ <p class="small">*Referência: tábua DHN/Marinha — estação Porto de Suape (PE), conforme publicação consultada em 01/11/2026. Outras fontes/estações apresentam pequenas diferenças; a maré observada em cada praia pode variar. Confirme a janela exata com a operadora autorizada. Não use a tabela isoladamente para entrar em bancos de areia.</p>
+</section>
+
+<section id="praias">
+ <div class="eyebrow">Escolha seu cenário</div><h2>Praias em fotos + mapa</h2>
+ <p class="lead">Use “Ver fotos” para abrir referências visuais de cada praia em uma nova página.</p>
+ <div class="gallery">
+  <article class="place"><div class="place-body"><h3>Antunes</h3><p>Água azul-clara, coqueiros e uma das praias prioritárias da viagem.</p><button class="fav-btn" data-fav-type="praia" data-fav-name="Antunes">♡ Favoritar</button><div class="actions"><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Praia+de+Antunes+Maragogi+AL">Abrir mapa ↗</a><a class="linkbtn pink" target="_blank" rel="noopener" href="https://guia.melhoresdestinos.com.br/praia-antunes-maragogi.html">Dicas da praia ↗</a><a class="linkbtn pink" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=Praia+de+Antunes+Maragogi">Ver fotos ↗</a></div></div></article>
+  <article class="place"><div class="place-body"><h3>Ponta de Mangue</h3><p>Águas rasas e transparentes; ótima combinação com Antunes no mesmo dia.</p><button class="fav-btn" data-fav-type="praia" data-fav-name="Ponta de Mangue">♡ Favoritar</button><div class="actions"><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Praia+de+Ponta+de+Mangue+Maragogi+AL">Abrir mapa ↗</a><a class="linkbtn pink" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=Praia+de+Ponta+de+Mangue+Maragogi">Ver fotos ↗</a></div></div></article>
+  <article class="place"><div class="place-body"><h3>Patacho</h3><p>Praia preservada em Porto de Pedras; uma das grandes prioridades da Rota Ecológica.</p><button class="fav-btn" data-fav-type="praia" data-fav-name="Patacho">♡ Favoritar</button><div class="actions"><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Praia+do+Patacho+Porto+de+Pedras+AL">Abrir mapa ↗</a><a class="linkbtn pink" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=Praia+do+Patacho+Porto+de+Pedras">Ver fotos ↗</a></div></div></article>
+  <article class="place"><div class="place-body"><h3>Praia do Toque</h3><p>Parada tranquila em São Miguel dos Milagres. Combine com Patacho sem tentar visitar tudo.</p><button class="fav-btn" data-fav-type="praia" data-fav-name="Praia do Toque">♡ Favoritar</button><div class="actions"><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Praia+do+Toque+Sao+Miguel+dos+Milagres+AL">Abrir mapa ↗</a><a class="linkbtn pink" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=Praia+do+Toque+Sao+Miguel+dos+Milagres">Ver fotos ↗</a></div></div></article>
+  <article class="place"><div class="place-body"><h3>Bitingui</h3><p>Praia perto da pousada, perfeita para um dia sem grandes deslocamentos.</p><button class="fav-btn" data-fav-type="praia" data-fav-name="Bitingui">♡ Favoritar</button><div class="actions"><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Praia+de+Bitingui+Japaratinga+AL">Abrir mapa ↗</a><a class="linkbtn pink" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=Praia+de+Bitingui+Japaratinga">Ver fotos ↗</a></div></div></article>
+  <article class="place"><div class="place-body"><h3>Barra Grande</h3><p>Base para conhecer o Caminho de Moisés, sempre respeitando a subida da maré.</p><button class="fav-btn" data-fav-type="praia" data-fav-name="Barra Grande">♡ Favoritar</button><div class="actions"><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Praia+de+Barra+Grande+Maragogi+AL">Abrir mapa ↗</a><a class="linkbtn pink" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=Praia+de+Barra+Grande+Maragogi+Caminho+de+Moises">Ver fotos ↗</a></div></div></article>
+ </div>
+ <p class="small">As fotografias são referências visuais publicadas por guias e sites de turismo; condições, cor da água e paisagem variam conforme clima, maré e época.</p>
+</section>
+
+
+<section id="rotas">
+ <div class="eyebrow">Deslocamentos da viagem</div><h2>Mapas e rotas</h2>
+ <p class="lead">Atalhos para abrir cada percurso no Google Maps. Os tempos exibidos pelo aplicativo podem variar conforme trânsito, obras e condições da estrada.</p>
+ <div class="restaurants">
+  <article class="restaurant-card"><h3>Dia 23 · Antunes + Ponta de Mangue</h3><p>Japaratinga → Praia de Antunes → Ponta de Mangue → Japaratinga.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Japaratinga,+AL&destination=Japaratinga,+AL&waypoints=Praia+de+Antunes,+Maragogi,+AL%7CPonta+de+Mangue,+Maragogi,+AL">Abrir percurso ↗</a></article>
+  <article class="restaurant-card"><h3>Dia 24 · Galés de Maragogi</h3><p>Japaratinga → ponto de embarque das piscinas naturais → centro de Maragogi → Japaratinga.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Japaratinga,+AL&destination=Japaratinga,+AL&waypoints=Centro+de+Maragogi,+AL">Abrir percurso ↗</a></article>
+  <article class="restaurant-card"><h3>Dia 25 · Croas de São Bento + Barra Grande</h3><p>Japaratinga → Praia de São Bento (embarque da jangada) → Barra Grande → Japaratinga.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Japaratinga,+AL&destination=Japaratinga,+AL&waypoints=Praia+de+S%C3%A3o+Bento,+Maragogi,+AL%7CPraia+de+Barra+Grande,+Maragogi,+AL">Abrir percurso ↗</a></article>
+  <article class="restaurant-card"><h3>Dia 26 · Patacho + Milagres</h3><p>Japaratinga → Praia do Patacho → Praia do Toque → Porto da Rua → Japaratinga.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Japaratinga,+AL&destination=Japaratinga,+AL&waypoints=Praia+do+Patacho,+Porto+de+Pedras,+AL%7CPraia+do+Toque,+Sao+Miguel+dos+Milagres,+AL%7CPorto+da+Rua,+AL">Abrir percurso ↗</a></article>
+  <article class="restaurant-card"><h3>Dia 28 · Retorno ao aeroporto</h3><p>Japaratinga → Aeroporto Internacional do Recife (REC).</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=Japaratinga,+AL&destination=Aeroporto+Internacional+do+Recife,+PE">Abrir percurso ↗</a></article>
+ </div>
+ <div class="notice"><b>Dica:</b> abra a rota antes de sair e confirme o destino exato do estacionamento ou ponto de embarque com o estabelecimento/operadora. As Galés são acessadas por embarcação; o mapa mostra a região de embarque, não o trajeto marítimo.</div>
+</section>
+<section id="favoritos">
+ <div class="eyebrow">Sua seleção pessoal</div><h2>Favoritos da viagem</h2>
+ <p class="lead">Marque as praias e restaurantes que mais interessam. Sua seleção fica salva neste navegador.</p>
+ <div class="favorites-panel">
+  <div id="favoritesList" class="data-list"><p class="fav-empty">Você ainda não favoritou nenhum lugar. Use o botão ♡ nas praias e restaurantes.</p></div>
+ </div>
+</section>
+<section id="restaurantes">
+ <div class="eyebrow">Onde comer</div><h2>Restaurantes salvos</h2>
+ <p class="lead">Sugestões distribuídas pelo roteiro. Notas e número de avaliações são referências consultadas em 01/11/2026 e podem mudar; confirme funcionamento, reserva, preços e consumação antes de ir.</p>
+ <div class="restaurants">
+  <article class="restaurant-card"><h3>Scalini Restaurante</h3><div class="rating">★ 4,8 · 263 avaliações</div><p>Japaratinga / Bitingui · frutos do mar, polvo e pratos mais elaborados. Boa opção para jantar.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Scalini+Restaurante+Japaratinga">Ver rota ↗</a><button class="fav-btn" data-fav-type="restaurante" data-fav-name="Scalini Restaurante">♡ Favoritar</button></article>
+  <article class="restaurant-card"><h3>Odoiá Maragogi</h3><div class="rating">★ 4,5 · 1.099 avaliações</div><p>Centro de Maragogi · frutos do mar e refeição à beira-mar.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Odoia+Maragogi">Ver rota ↗</a><button class="fav-btn" data-fav-type="restaurante" data-fav-name="Odoiá Maragogi">♡ Favoritar</button></article>
+  <article class="restaurant-card"><h3>Netun Restaurante</h3><div class="rating">★ 4,7 · 1.766 avaliações</div><p>Maragogi · cozinha brasileira contemporânea, com opções de frutos do mar.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Netun+Restaurante+Maragogi">Ver rota ↗</a><button class="fav-btn" data-fav-type="restaurante" data-fav-name="Netun Restaurante">♡ Favoritar</button></article>
+  <article class="restaurant-card"><h3>Paraíso Bar e Restaurante</h3><div class="rating">★ 4,7 · 292 avaliações</div><p>Praia de Xaréu, perto de Antunes · estrutura de praia e almoço sem pressa.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Paraiso+Bar+Restaurante+Praia+de+Xareu+Maragogi">Ver rota ↗</a><button class="fav-btn" data-fav-type="restaurante" data-fav-name="Paraíso Bar e Restaurante">♡ Favoritar</button></article>
+  <article class="restaurant-card"><h3>Casa da Praia Lounge e Pizzaria</h3><div class="rating">★ 4,7 · 569 avaliações</div><p>Barra Grande · lounge pé na areia durante o dia e pizzaria à noite.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Casa+da+Praia+Lounge+Pizzaria+Barra+Grande+Maragogi">Ver rota ↗</a><button class="fav-btn" data-fav-type="restaurante" data-fav-name="Casa da Praia Lounge e Pizzaria">♡ Favoritar</button></article>
+  <article class="restaurant-card"><h3>Restaurante No Quintal</h3><div class="rating">★ 4,7 · 2.004 avaliações</div><p>Praia do Toque, Milagres · ambiente intimista e gastronomia regional autoral. Reservar é recomendável.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Restaurante+No+Quintal+Praia+do+Toque">Ver rota ↗</a><button class="fav-btn" data-fav-type="restaurante" data-fav-name="Restaurante No Quintal">♡ Favoritar</button></article>
+  <article class="restaurant-card"><h3>Restaurante do Enildo</h3><div class="rating">★ 4,1 · 1.549 avaliações</div><p>Porto da Rua · frutos do mar e almoço pé na areia.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Restaurante+do+Enildo+Porto+da+Rua">Ver rota ↗</a><button class="fav-btn" data-fav-type="restaurante" data-fav-name="Restaurante do Enildo">♡ Favoritar</button></article>
+  <article class="restaurant-card"><h3>Casa Carva</h3><div class="rating">★ 5,0 · 248 avaliações</div><p>Tatuamunha, Porto de Pedras · cozinha brasileira em ambiente familiar; alternativa para o dia do Patacho.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Casa+Carva+Porto+de+Pedras">Ver rota ↗</a><button class="fav-btn" data-fav-type="restaurante" data-fav-name="Casa Carva">♡ Favoritar</button></article>
+ </div>
+</section>
+<section id="clima">
+ <div class="eyebrow">Conferir perto da viagem</div><h2>Clima e preparação</h2>
+ <p class="lead">Ainda é cedo para uma previsão diária confiável para 22–28/11. Acompanhe a previsão na semana da viagem e novamente na véspera de cada passeio.</p>
+ <div class="weather">
+  <div class="weather-card"><h3>☀️ Previsão do tempo</h3><p>Consulte chuva, nebulosidade, vento e sensação térmica para Maragogi e Japaratinga. Dê preferência a previsões atualizadas de 3 a 5 dias antes.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.climatempo.com.br/previsao-do-tempo/10-dias/cidade/541/maragogi-al">Climatempo · Maragogi ↗</a></div>
+  <div class="weather-card"><h3>🌬️ Vento e mar</h3><p>Além da chuva, vento e ondulação podem alterar a transparência da água e a operação de passeios. Confirme com a operadora na véspera.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.marinha.mil.br/chm/dados-do-smm">Marinha · dados marítimos ↗</a></div>
+ </div>
+</section>
+
+<section id="dicas">
+ <div class="eyebrow">Para consultar quando precisar</div><h2>Dicas reunidas</h2>
+ <div class="cards">
+  <article class="tip"><div class="icon">🚗</div><h3>Carro alugado</h3><p>Ajuda a escolher praias e horários com liberdade. Confira condições de estacionamento, acessos e combustível antes de sair.</p></article>
+  <article class="tip"><div class="icon">🌊</div><h3>Maré e piscinas</h3><p>Priorize as marés mais baixas para Galés e Caminho de Moisés, mas reserve somente após confirmação local e autorização do passeio.</p></article>
+  <article class="tip"><div class="icon">☀️</div><h3>Praia com conforto</h3><p>Leve água, proteção solar, chapéu e dinheiro/cartão. Pergunte sobre consumação mínima e estacionamento antes de escolher barraca.</p></article>
+  <article class="tip"><div class="icon">🧭</div><h3>Sem excesso de deslocamento</h3><p>Antunes e Ponta de Mangue ficam no mesmo dia; Patacho e Milagres também. Assim sobra tempo para curtir.</p></article>
+  <article class="tip"><div class="icon">🐋</div><h3>Rota Ecológica</h3><p>Para um dia mais leve, escolha Patacho e apenas mais uma parada. Não tente encaixar todas as praias da região.</p></article>
+  <article class="tip"><div class="icon">✈️</div><h3>Volta por Recife</h3><p>Voo às 23h40: planeje a saída de Japaratinga entre 16h30 e 17h, confirmando trânsito, abastecimento e devolução do carro.</p></article>
+ </div>
+ <div class="notice pink"><b>Sobre Porto:</b> Porto de Pedras vale muito a visita porque abriga a Praia do Patacho e combina naturalmente com São Miguel dos Milagres. Porto de Galinhas fica fora de mão para esta semana e eu deixaria para outra viagem.</div>
+</section>
+
+<section id="orcamento">
+ <div class="eyebrow">Planejamento financeiro</div><h2>Orçamento da viagem</h2>
+ <p class="lead">Registre despesas previstas e realizadas. Os valores são editáveis e ficam salvos localmente neste navegador.</p>
+ <div class="budget-panel">
+  <form id="budgetForm" class="inline-form">
+   <label>Categoria<select id="budgetCategory"><option>Hospedagem</option><option>Passagens</option><option>Carro</option><option>Combustível</option><option>Alimentação</option><option>Passeios</option><option>Compras</option><option>Outros</option></select></label>
+   <label>Descrição<input id="budgetDesc" placeholder="Ex.: almoço em Maragogi" required></label>
+   <label>Valor (R$)<input id="budgetValue" type="number" min="0" step="0.01" placeholder="0,00" required></label>
+   <button class="action-btn" type="submit">Adicionar gasto</button>
+  </form>
+  <div class="budget-summary">
+   <div class="budget-total"><small>Total registrado</small><strong id="budgetTotal">R$ 0,00</strong></div>
+   <div class="budget-total"><small>Itens lançados</small><strong id="budgetCount">0</strong></div>
+   <div class="budget-total"><small>Maior categoria</small><strong id="budgetTop">—</strong></div>
+  </div>
+  <div id="budgetList" class="data-list"><p class="fav-empty">Nenhuma despesa registrada ainda.</p></div>
+ </div>
+</section>
+
+<section id="diario">
+ <div class="eyebrow">Memórias da viagem</div><h2>Diário de viagem</h2>
+ <p class="lead">Guarde pequenas lembranças, descobertas e os lugares que mais marcaram cada dia.</p>
+ <div class="diary-panel">
+  <div class="diary-grid">
+   <label>Dia da viagem<select id="diaryDay"><option>22/11 · Chegada e Japaratinga</option><option>23/11 · Antunes e Ponta de Mangue</option><option>24/11 · Galés de Maragogi</option><option>25/11 · Barra Grande</option><option>26/11 · Patacho e Milagres</option><option>27/11 · Japaratinga sem pressa</option><option>28/11 · Retorno</option></select></label>
+   <label>Nota do dia<select id="diaryRating"><option value="5">★★★★★ · Inesquecível</option><option value="4">★★★★☆ · Muito bom</option><option value="3">★★★☆☆ · Bom</option><option value="2">★★☆☆☆ · Regular</option><option value="1">★☆☆☆☆ · Não foi como esperado</option></select></label>
+  </div>
+  <label style="display:block;margin-top:12px">O que queremos lembrar?<textarea id="diaryText" placeholder="Praia favorita, restaurante, cor do mar, momentos especiais..." rows="4"></textarea></label>
+  <button class="action-btn" id="saveDiary" type="button" style="margin-top:10px">Salvar lembrança</button>
+  <p id="diarySaved" class="saved-note" aria-live="polite"></p>
+  <div id="diaryEntries" class="data-list"></div>
+ </div>
+</section>
+<section id="organizar">
+ <div class="eyebrow">Vamos construindo juntas</div><h2>Organização pré-viagem</h2>
+ <p class="lead">Checklists para documentos, malas, itens de praia e os últimos preparativos. Você pode marcar os itens aos poucos.</p>
+ <div class="notice pink"><b>Dica:</b> os checklists salvam as marcações neste navegador. Se abrir o arquivo em outro aparelho ou navegador, será necessário marcar novamente.</div>
+ <div class="checklist" data-checkgroup="reservas">
+  <h3>✈️ Reservas e logística</h3><b class="check-count">0 de 8 itens concluídos</b><div class="progress"><div class="check-bar"></div></div>
+  <label><input type="checkbox"> Conferir os bilhetes aéreos e horários dos voos</label>
+  <label><input type="checkbox"> Separar comprovantes da pousada e do aluguel do carro</label>
+  <label><input type="checkbox"> Conferir regras, caução, seguro e local de retirada/devolução do carro</label>
+  <label><input type="checkbox"> Salvar endereço da pousada e rotas principais no celular</label>
+  <label><input type="checkbox"> Confirmar passeio autorizado às piscinas naturais</label>
+  <label><input type="checkbox"> Conferir tábua de marés e condições do mar na semana da viagem</label>
+  <label><input type="checkbox"> Confirmar funcionamento e reservas dos restaurantes escolhidos</label>
+  <label><input type="checkbox"> Verificar previsão de chuva, vento e mar antes de cada passeio</label>
+ </div>
+ <div class="checklist" data-checkgroup="documentos" style="margin-top:14px">
+  <h3>🪪 Documentos e itens importantes</h3><b class="check-count">0 de 7 itens concluídos</b><div class="progress"><div class="check-bar"></div></div>
+  <label><input type="checkbox"> Documento oficial com foto válido (RG ou CNH)</label>
+  <label><input type="checkbox"> CNH válida para quem vai dirigir</label>
+  <label><input type="checkbox"> Cartões e algum dinheiro em espécie</label>
+  <label><input type="checkbox"> Comprovantes de passagens, hospedagem e locação do carro</label>
+  <label><input type="checkbox"> Cartões do plano de saúde/seguro-viagem, se aplicável</label>
+  <label><input type="checkbox"> Cópias digitais dos documentos e reservas salvas com acesso offline</label>
+  <label><input type="checkbox"> Conferir limites de bagagem e regras da companhia aérea</label>
+ </div>
+ <div class="checklist" data-checkgroup="malas" style="margin-top:14px">
+  <h3>🧳 Mala de roupas e acessórios</h3><b class="check-count">0 de 12 itens concluídos</b><div class="progress"><div class="check-bar"></div></div>
+  <label><input type="checkbox"> Roupas leves para o dia</label>
+  <label><input type="checkbox"> Looks para jantar e passeios à noite</label>
+  <label><input type="checkbox"> Roupas íntimas e pijamas</label>
+  <label><input type="checkbox"> Maiôs, biquínis ou sungas</label>
+  <label><input type="checkbox"> Saídas de praia e roupas com proteção UV</label>
+  <label><input type="checkbox"> Shorts, camisetas e peças confortáveis para deslocamentos</label>
+  <label><input type="checkbox"> Chinelo e sandália confortável</label>
+  <label><input type="checkbox"> Tênis ou calçado para caminhadas</label>
+  <label><input type="checkbox"> Chapéu ou boné</label>
+  <label><input type="checkbox"> Óculos de sol</label>
+  <label><input type="checkbox"> Uma peça leve para vento ou chuva</label>
+  <label><input type="checkbox"> Sacola para roupas molhadas e sujas</label>
+ </div>
+ <div class="checklist" data-checkgroup="praia" style="margin-top:14px">
+  <h3>🩵 Necessaire e bolsa de praia</h3><b class="check-count">0 de 11 itens concluídos</b><div class="progress"><div class="check-bar"></div></div>
+  <label><input type="checkbox"> Protetor solar para rosto e corpo</label>
+  <label><input type="checkbox"> Protetor labial com FPS</label>
+  <label><input type="checkbox"> Repelente</label>
+  <label><input type="checkbox"> Produtos de higiene pessoal e cuidados com cabelo</label>
+  <label><input type="checkbox"> Escova e pasta de dentes</label>
+  <label><input type="checkbox"> Medicamentos de uso habitual e itens pessoais necessários</label>
+  <label><input type="checkbox"> Toalha ou canga</label>
+  <label><input type="checkbox"> Bolsa de praia</label>
+  <label><input type="checkbox"> Garrafa reutilizável para água</label>
+  <label><input type="checkbox"> Carregadores e power bank</label>
+  <label><input type="checkbox"> Capinha impermeável para celular (se for usar na água)</label>
+ </div>
+ <div class="checklist" data-checkgroup="casa" style="margin-top:14px">
+  <h3>🏡 Antes de sair de casa</h3><b class="check-count">0 de 6 itens concluídos</b><div class="progress"><div class="check-bar"></div></div>
+  <label><input type="checkbox"> Conferir janelas, portas e trancas</label>
+  <label><input type="checkbox"> Desligar aparelhos e tirar da tomada o que não precisa ficar ligado</label>
+  <label><input type="checkbox"> Verificar geladeira, lixo e alimentos perecíveis</label>
+  <label><input type="checkbox"> Organizar plantas e cuidados com pets, se houver</label>
+  <label><input type="checkbox"> Separar chaves e combinar cuidados da casa, se necessário</label>
+  <label><input type="checkbox"> Conferir documentos, celular, carteira e bagagens antes de sair</label>
+ </div>
+ <div class="editbox" style="margin-top:18px">
+  <h3>Detalhes da viagem</h3>
+  <p class="small">Use este espaço para registrar horários e observações que ainda vamos confirmar.</p>
+  <label for="flightin">Horário de chegada em Recife</label><input id="flightin" placeholder="Ex.: 09h30">
+  <label for="flightout">Horário do voo de volta</label><input id="flightout" placeholder="Ex.: 21h15">
+  <label for="notes">Observações / preferências</label><textarea id="notes" rows="3" placeholder="Ex.: beach clubs tranquilos, almoço com vista para o mar..."></textarea>
+  <button onclick="saveNotes()">Atualizar resumo</button><p id="saved" class="small" aria-live="polite"></p>
+ </div>
+</section>
+</main>
+<footer>Caderno de viagem • Alagoas, novembro de 2026 • Planejamento colaborativo<br>Confirme marés, passeios, acessos e horários localmente antes da viagem.</footer>
+<div class="lightbox" id="lightbox" onclick="closePhoto()"><button aria-label="Fechar" onclick="closePhoto()">×</button><img id="lightbox-img" alt="Foto ampliada" onclick="event.stopPropagation()"></div>
+<script>
+function closePhoto(){document.getElementById("lightbox").classList.remove("open")}
+const checkGroups=[...document.querySelectorAll('.checklist[data-checkgroup]')];
+checkGroups.forEach(group=>{
+ const key='alagoas-checklist-'+group.dataset.checkgroup;
+ const boxes=[...group.querySelectorAll('input[type="checkbox"]')];
+ try{const saved=JSON.parse(localStorage.getItem(key)||'[]');boxes.forEach((box,i)=>box.checked=!!saved[i]);}catch(e){}
+ const update=()=>{const done=boxes.filter(box=>box.checked).length;const count=group.querySelector('.check-count');const bar=group.querySelector('.check-bar');count.textContent=`${done} de ${boxes.length} itens concluídos`;bar.style.width=(done/boxes.length*100)+'%';try{localStorage.setItem(key,JSON.stringify(boxes.map(box=>box.checked)));}catch(e){}};
+ boxes.forEach(box=>box.addEventListener('change',update));update();
+});
+function saveNotes(){const a=document.getElementById('flightin').value||'não informado';const b=document.getElementById('flightout').value||'não informado';const c=document.getElementById('notes').value||'sem observações';document.getElementById('saved').textContent=`Resumo atualizado — chegada: ${a}; volta: ${b}; observações: ${c}`;}
+
+// Favoritos: praias e restaurantes
+const favKey='alagoas-favorites-v1';
+function getFavs(){try{return JSON.parse(localStorage.getItem(favKey)||'[]')}catch(e){return []}}
+function setFavs(v){try{localStorage.setItem(favKey,JSON.stringify(v))}catch(e){};renderFavs()}
+function renderFavs(){
+ const list=document.getElementById('favoritesList'); if(!list)return;
+ const favs=getFavs();
+ document.querySelectorAll('.fav-btn').forEach(btn=>{
+  const active=favs.some(x=>x.type===btn.dataset.favType&&x.name===btn.dataset.favName);
+  btn.classList.toggle('active',active);btn.textContent=active?'♥ Favoritado':'♡ Favoritar';
+ });
+ list.innerHTML='';
+ if(!favs.length){list.innerHTML='<p class="fav-empty">Você ainda não favoritou nenhum lugar. Use o botão ♡ nas praias e restaurantes.</p>';return}
+ favs.forEach((f,i)=>{const row=document.createElement('div');row.className='data-row';row.innerHTML=`<span><b>${f.name}</b><br><small>${f.type}</small></span><button type="button" aria-label="Remover favorito">Remover ×</button>`;row.querySelector('button').addEventListener('click',()=>{const a=getFavs();a.splice(i,1);setFavs(a)});list.appendChild(row)});
+}
+document.querySelectorAll('.fav-btn').forEach(btn=>btn.addEventListener('click',()=>{
+ const a=getFavs(),type=btn.dataset.favType,name=btn.dataset.favName;
+ const i=a.findIndex(x=>x.type===type&&x.name===name);
+ if(i>=0)a.splice(i,1);else a.push({type,name});
+ setFavs(a);
+}));
+renderFavs();
+
+// Orçamento
+const budgetKey='alagoas-budget-v1';
+function getBudget(){try{return JSON.parse(localStorage.getItem(budgetKey)||'[]')}catch(e){return []}}
+function money(n){return Number(n).toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}
+function renderBudget(){
+ const items=getBudget(),list=document.getElementById('budgetList');if(!list)return;
+ document.getElementById('budgetTotal').textContent=money(items.reduce((s,x)=>s+x.value,0));
+ document.getElementById('budgetCount').textContent=items.length;
+ const totals={};items.forEach(x=>totals[x.category]=(totals[x.category]||0)+x.value);
+ const top=Object.entries(totals).sort((a,b)=>b[1]-a[1])[0];
+ document.getElementById('budgetTop').textContent=top?top[0]:'—';
+ list.innerHTML='';
+ if(!items.length){list.innerHTML='<p class="fav-empty">Nenhuma despesa registrada ainda.</p>';return}
+ items.forEach((x,i)=>{const row=document.createElement('div');row.className='data-row';row.innerHTML=`<span><b>${x.description}</b><br><small>${x.category}</small></span><span><b>${money(x.value)}</b> <button type="button" aria-label="Excluir despesa">×</button></span>`;row.querySelector('button').addEventListener('click',()=>{const a=getBudget();a.splice(i,1);localStorage.setItem(budgetKey,JSON.stringify(a));renderBudget()});list.appendChild(row)});
+}
+document.getElementById('budgetForm')?.addEventListener('submit',e=>{
+ e.preventDefault();const description=document.getElementById('budgetDesc').value.trim(),value=Number(document.getElementById('budgetValue').value);
+ if(!description||!Number.isFinite(value)||value<0)return;
+ const a=getBudget();a.push({category:document.getElementById('budgetCategory').value,description,value});
+ localStorage.setItem(budgetKey,JSON.stringify(a));e.target.reset();renderBudget();
+});
+renderBudget();
+
+// Diário
+const diaryKey='alagoas-diary-v1';
+function getDiary(){try{return JSON.parse(localStorage.getItem(diaryKey)||'[]')}catch(e){return []}}
+function renderDiary(){
+ const el=document.getElementById('diaryEntries');if(!el)return;
+ const a=getDiary();el.innerHTML='';
+ if(!a.length){el.innerHTML='<p class="fav-empty">Suas lembranças salvas aparecerão aqui.</p>';return}
+ a.forEach((x,i)=>{const row=document.createElement('div');row.className='data-row';row.innerHTML=`<span><b>${x.day}</b><br><small>${'★'.repeat(x.rating)}${'☆'.repeat(5-x.rating)} · ${x.text.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}</small></span><button type="button">Excluir ×</button>`;row.querySelector('button').addEventListener('click',()=>{const b=getDiary();b.splice(i,1);localStorage.setItem(diaryKey,JSON.stringify(b));renderDiary()});el.appendChild(row)});
+}
+document.getElementById('saveDiary')?.addEventListener('click',()=>{
+ const text=document.getElementById('diaryText').value.trim();if(!text){document.getElementById('diarySaved').textContent='Escreva uma lembrança antes de salvar.';return}
+ const a=getDiary();a.unshift({day:document.getElementById('diaryDay').value,rating:Number(document.getElementById('diaryRating').value),text});
+ localStorage.setItem(diaryKey,JSON.stringify(a));document.getElementById('diaryText').value='';document.getElementById('diarySaved').textContent='Lembrança salva neste navegador.';renderDiary();
+});
+renderDiary();
+
+// Gráfico SVG da altura de baixa-mar preliminar presente na tabela.
+(function drawTide(){
+ const svg=document.getElementById('tideChart');if(!svg)return;
+ const data=[['22/11',0.30],['23/11',0.20],['24/11',0.20],['25/11',0.20],['26/11',0.20],['27/11',0.40],['28/11',0.50]];
+ const W=720,H=250,L=48,R=20,T=20,B=48,plotW=W-L-R,plotH=H-T-B,max=.6;
+ const x=i=>L+i*plotW/(data.length-1),y=v=>T+plotH-(v/max)*plotH;
+ let s='';
+ [0,.15,.30,.45,.60].forEach(v=>{const yy=y(v);s+=`<line x1="${L}" y1="${yy}" x2="${W-R}" y2="${yy}" stroke="#e9e4e2" stroke-width="1"/><text x="${L-10}" y="${yy+4}" text-anchor="end" font-size="11" fill="#718087">${v.toFixed(2)}</text>`});
+ const points=data.map((d,i)=>`${x(i)},${y(d[1])}`).join(' ');
+ s+=`<polyline points="${points}" fill="none" stroke="#8bc7d7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>`;
+ data.forEach((d,i)=>{s+=`<g class="tide-point" tabindex="0" role="button" aria-label="${d[0]}: ${d[1].toFixed(2)} metro" data-day="${d[0]}" data-height="${d[1].toFixed(2)}"><title>${d[0]} · ${d[1].toFixed(2)} m (referência preliminar)</title><circle cx="${x(i)}" cy="${y(d[1])}" r="7" fill="#d58aa8" stroke="white" stroke-width="2" style="cursor:pointer"/><text x="${x(i)}" y="${H-20}" text-anchor="middle" font-size="11" fill="#526b75">${d[0]}</text><text x="${x(i)}" y="${y(d[1])-12}" text-anchor="middle" font-size="11" font-weight="700" fill="#9f4f72">${d[1].toFixed(2)}</text></g>`});
+ svg.innerHTML=s;
+ svg.querySelectorAll('.tide-point').forEach(point=>{
+  const show=()=>{const el=document.getElementById('tidePointInfo');el.textContent=`${point.dataset.day}: baixa-mar de referência ${point.dataset.height} m. Valor preliminar, sujeito à confirmação na tábua oficial.`};
+  point.addEventListener('click',show);point.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();show()}});
+ });
+})();
+
+</script>
+</body></html>
